@@ -46,11 +46,11 @@ body {
 .product:hover {
   transform: translateY(-9px);
 }
-/* ==== Individual Product Card ==== */
+
 .product {
   background: white;
   border-radius: 12px;
-  height:300;
+  height:300px;
   width: 300px;
   padding: 1rem;
   text-align: center;
