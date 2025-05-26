@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:bisque;
+  color: #333;
+}
+.top-bar {
+  background-color:beige;
+  color: maroon;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-style:italic;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color:maroon;
+  text-decoration:solid;
+  margin-left: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2rem;
+  
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.product:hover {
+  transform: translateY(-9px);
+}
+/* ==== Individual Product Card ==== */
+.product {
+  background: white;
+  border-radius: 12px;
+  height:300;
+  width: 300px;
+  padding: 1rem;
+  text-align: center;
+}
+.product img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.product-title {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  color: brown;
+  margin-bottom: 0.3rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+.add-cart-btn {
+  margin-top: 0.7rem;
+  background-color: bisque;
+  color: rgb(39, 4, 4);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+.add-cart-btn:hover {
+  background-color: burlywood;
+}
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    width: 90%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
